@@ -269,6 +269,200 @@
 
 
   
+    <article id="post-读书笔记/算法笔记第2章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/04/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" target="_blank">读书笔记/算法笔记第2章</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/04/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" class="archive-article-date">
+        <time datetime="2020-04-23T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-23</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <a id="more"></a>
+<h1 id="第2章-C-C-快速入门"><a href="#第2章-C-C-快速入门" class="headerlink" title="第2章 C/C++快速入门"></a>第2章 C/C++快速入门</h1><h2 id="2-1-基本数据类型"><a href="#2-1-基本数据类型" class="headerlink" title="2.1 基本数据类型"></a>2.1 基本数据类型</h2><h3 id="2-1-1-变量的定义"><a href="#2-1-1-变量的定义" class="headerlink" title="2.1.1 变量的定义"></a>2.1.1 变量的定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名;</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名 &#x3D; 初值;</span><br></pre></td></tr></table></figure>
+<p>变量名注意点：</p>
+<p>①不能是语言标识符；</p>
+<p>②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线；</p>
+<p>③区分大小写。</p>
+<h3 id="2-1-2-变量类型"><a href="#2-1-2-变量类型" class="headerlink" title="2.1.2 变量类型"></a>2.1.2 变量类型</h3><h4 id="1-整型"><a href="#1-整型" class="headerlink" title="1.整型"></a>1.整型</h4><p>（1）整型 <code>int</code>：绝对值在 <code>1e9</code> 之内可以放心使用。</p>
+<p>（2）长整型 <code>long long</code>：超过 <code>int</code> 时使用，初值太大需要在后面加 <code>LL</code>。<code>unsigned</code> 可以将负数范围移到正数上。</p>
+<h4 id="2-浮点型"><a href="#2-浮点型" class="headerlink" title="2.浮点型"></a>2.浮点型</h4><p>（1）单精度 <code>float</code>：有效精度6-7位。</p>
+<p>（2）双精度 <code>double</code>：有效精度15-16位，因此浮点类型尽量使用 <code>double</code>。</p>
+<h4 id="3-字符型"><a href="#3-字符型" class="headerlink" title="3.字符型"></a>3.字符型</h4><p>（1）字符变量和字符常量</p>
+<p>使用ASCII码。</p>
+<p>（2）转义字符</p>
+<p>\n表示换行，\0表示空字符NULL。</p>
+<p>（3）字符串常量</p>
+<p>C中有字符数组，C++中有string类型。</p>
+<h4 id="4-布尔型"><a href="#4-布尔型" class="headerlink" title="4.布尔型"></a>4.布尔型</h4><p>C语言使用必须添加 <code>#include &lt;stdbool.h&gt;</code> 头文件。0为false，非0为true，false为0，true为1。</p>
+<h3 id="2-1-3-强制类型转换"><a href="#2-1-3-强制类型转换" class="headerlink" title="2.1.3 强制类型转换"></a>2.1.3 强制类型转换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(新类型名)变量名</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-1-4-符号常量和const常量"><a href="#2-1-4-符号常量和const常量" class="headerlink" title="2.1.4 符号常量和const常量"></a>2.1.4 符号常量和const常量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 常量</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const 数据类型 变量名 &#x3D; 常量;</span><br></pre></td></tr></table></figure>
+<p>虽然以上都能定义常量，但是推荐使用 <code>const</code> 写法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 任何语句或片段</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>定义注意加括号。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.1.5 运算符</span><br><span class="line"></span><br><span class="line">#### 1.算术运算符</span><br><span class="line">++i是先加1在使用i，而i++是先使用i再加1。</span><br><span class="line"></span><br><span class="line">#### 2.关系运算符</span><br><span class="line"></span><br><span class="line">#### 3.逻辑运算符</span><br><span class="line"></span><br><span class="line">#### 4.条件运算符</span><br><span class="line">唯一的三目运算符：( ? : )</span><br><span class="line"></span><br><span class="line">#### 5.位运算符</span><br><span class="line">定义无穷大</span><br></pre></td></tr></table></figure>
+<p>const int INF = (1 &lt;&lt; 30) - 1;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或</span><br></pre></td></tr></table></figure>
+<p>const int INF = 0x3fffffff;</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-日记/2020.4.23" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/04/23/%E6%97%A5%E8%AE%B0/2020.4.23/" target="_blank">日记/2020.4.23</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/04/23/%E6%97%A5%E8%AE%B0/2020.4.23/" class="archive-article-date">
+        <time datetime="2020-04-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-23</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>晚上开始数学建模的第二题，因为要开始建模了，有点难度了，参考了一下网上很多解法，不过适合我们这道题的不多，还是得自己建模，在别人的模型上稍加改编，明天继续。</p>
+    
+    <a class="article-more-a" href="/2020/04/23/%E6%97%A5%E8%AE%B0/2020.4.23/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-日记/2020.4.22" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -805,174 +999,6 @@
     <p>今天虽然看上去是很水的一天，但是其实把一个星期的作业都压到一天做完确实累，晚上微积分调课的时候都差点累得睡着了，明天早上开始肝小游戏！</p>
     
     <a class="article-more-a" href="/2020/04/16/%E6%97%A5%E8%AE%B0/2020.4.16/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-日记/2020.4.15" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/" target="_blank">日记/2020.4.15</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/" class="archive-article-date">
-        <time datetime="2020-04-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>今天早起补了上上周的计算机网络，但是今天的课程就听不下去了，下午的OS实验也是没怎么听，晚上的数学建模开赛会讲得这比赛挺水的， 好像是为了新手体验比赛而设立的，只能尽全力比了，晚上想把明天的大数据做点的，结果发现下载了一晚上。。</p>
-    
-    <a class="article-more-a" href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-日记/2020.4.14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/" target="_blank">日记/2020.4.14</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/" class="archive-article-date">
-        <time datetime="2020-04-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>忙碌的一天结束了，感觉今天过得很累，一分一秒都没有浪费，全都在学习，真的只是课太多了，发现平时制定的计划也没有按时完成，等下周开始要开始明确的TODO，不能让自己空闲下来。</p>
-    
-    <a class="article-more-a" href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/#more">more >></a>
     
     
 

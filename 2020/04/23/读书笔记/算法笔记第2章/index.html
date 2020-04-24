@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="第2章 C&#x2F;C++快速入门">
+  <meta name="description" content="第2章 C&#x2F;C++快速入门2.1 基本数据类型2.1.1 变量的定义1变量类型 变量名; 或 1变量类型 变量名 &#x3D; 初值; 变量名注意点： ①不能是语言标识符； ②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线； ③区分大小写。 2.1.2 变量类型1.整型（1）整型 int：绝对值在 1e9 之内可以放心使用。 （2）长整型 long long：超">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读书笔记&#x2F;算法笔记第2章">
-<meta property="og:url" content="http://wangtianyu0222.github.io/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/index.html">
+<meta property="og:url" content="http://wangtianyu0222.github.io/2020/04/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Tuenity&#39;s blog">
-<meta property="og:description" content="第2章 C&#x2F;C++快速入门">
+<meta property="og:description" content="第2章 C&#x2F;C++快速入门2.1 基本数据类型2.1.1 变量的定义1变量类型 变量名; 或 1变量类型 变量名 &#x3D; 初值; 变量名注意点： ①不能是语言标识符； ②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线； ③区分大小写。 2.1.2 变量类型1.整型（1）整型 int：绝对值在 1e9 之内可以放心使用。 （2）长整型 long long：超">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-13T10:16:41.492Z">
-<meta property="article:modified_time" content="2020-04-13T10:17:24.283Z">
+<meta property="article:published_time" content="2020-04-23T04:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-23T14:06:40.155Z">
 <meta property="article:author" content="Tuenity">
 <meta property="article:tag" content="读书笔记">
 <meta name="twitter:card" content="summary">
@@ -213,8 +213,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-04-13T10:16:41.492Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
+<a href="/2020/04/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" class="archive-article-date">
+        <time datetime="2020-04-23T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-23</time>
 </a>
 
   
@@ -227,7 +227,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">9字</span>
+      <span class="post-count">449字</span>
     </span>
   </span>
 
@@ -248,7 +248,35 @@
   <div class="article-entry" itemprop="articleBody">
     
     <a id="more"></a>
-<h1 id="第2章-C-C-快速入门"><a href="#第2章-C-C-快速入门" class="headerlink" title="第2章 C/C++快速入门"></a>第2章 C/C++快速入门</h1>
+<h1 id="第2章-C-C-快速入门"><a href="#第2章-C-C-快速入门" class="headerlink" title="第2章 C/C++快速入门"></a>第2章 C/C++快速入门</h1><h2 id="2-1-基本数据类型"><a href="#2-1-基本数据类型" class="headerlink" title="2.1 基本数据类型"></a>2.1 基本数据类型</h2><h3 id="2-1-1-变量的定义"><a href="#2-1-1-变量的定义" class="headerlink" title="2.1.1 变量的定义"></a>2.1.1 变量的定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名;</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名 &#x3D; 初值;</span><br></pre></td></tr></table></figure>
+<p>变量名注意点：</p>
+<p>①不能是语言标识符；</p>
+<p>②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线；</p>
+<p>③区分大小写。</p>
+<h3 id="2-1-2-变量类型"><a href="#2-1-2-变量类型" class="headerlink" title="2.1.2 变量类型"></a>2.1.2 变量类型</h3><h4 id="1-整型"><a href="#1-整型" class="headerlink" title="1.整型"></a>1.整型</h4><p>（1）整型 <code>int</code>：绝对值在 <code>1e9</code> 之内可以放心使用。</p>
+<p>（2）长整型 <code>long long</code>：超过 <code>int</code> 时使用，初值太大需要在后面加 <code>LL</code>。<code>unsigned</code> 可以将负数范围移到正数上。</p>
+<h4 id="2-浮点型"><a href="#2-浮点型" class="headerlink" title="2.浮点型"></a>2.浮点型</h4><p>（1）单精度 <code>float</code>：有效精度6-7位。</p>
+<p>（2）双精度 <code>double</code>：有效精度15-16位，因此浮点类型尽量使用 <code>double</code>。</p>
+<h4 id="3-字符型"><a href="#3-字符型" class="headerlink" title="3.字符型"></a>3.字符型</h4><p>（1）字符变量和字符常量</p>
+<p>使用ASCII码。</p>
+<p>（2）转义字符</p>
+<p>\n表示换行，\0表示空字符NULL。</p>
+<p>（3）字符串常量</p>
+<p>C中有字符数组，C++中有string类型。</p>
+<h4 id="4-布尔型"><a href="#4-布尔型" class="headerlink" title="4.布尔型"></a>4.布尔型</h4><p>C语言使用必须添加 <code>#include &lt;stdbool.h&gt;</code> 头文件。0为false，非0为true，false为0，true为1。</p>
+<h3 id="2-1-3-强制类型转换"><a href="#2-1-3-强制类型转换" class="headerlink" title="2.1.3 强制类型转换"></a>2.1.3 强制类型转换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(新类型名)变量名</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-1-4-符号常量和const常量"><a href="#2-1-4-符号常量和const常量" class="headerlink" title="2.1.4 符号常量和const常量"></a>2.1.4 符号常量和const常量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 常量</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const 数据类型 变量名 &#x3D; 常量;</span><br></pre></td></tr></table></figure>
+<p>虽然以上都能定义常量，但是推荐使用 <code>const</code> 写法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 任何语句或片段</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>定义注意加括号。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.1.5 运算符</span><br><span class="line"></span><br><span class="line">#### 1.算术运算符</span><br><span class="line">++i是先加1在使用i，而i++是先使用i再加1。</span><br><span class="line"></span><br><span class="line">#### 2.关系运算符</span><br><span class="line"></span><br><span class="line">#### 3.逻辑运算符</span><br><span class="line"></span><br><span class="line">#### 4.条件运算符</span><br><span class="line">唯一的三目运算符：( ? : )</span><br><span class="line"></span><br><span class="line">#### 5.位运算符</span><br><span class="line">定义无穷大</span><br></pre></td></tr></table></figure>
+<p>const int INF = (1 &lt;&lt; 30) - 1;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或</span><br></pre></td></tr></table></figure>
+<p>const int INF = 0x3fffffff;</p>
+
     
 
     
@@ -262,7 +290,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://wangtianyu0222.github.io/2020/04/13/读书笔记/算法笔记第2章/" title="读书笔记/算法笔记第2章" target="_blank">http://wangtianyu0222.github.io/2020/04/13/读书笔记/算法笔记第2章/</a>
+          <a href="http://wangtianyu0222.github.io/2020/04/23/读书笔记/算法笔记第2章/" title="读书笔记/算法笔记第2章" target="_blank">http://wangtianyu0222.github.io/2020/04/23/读书笔记/算法笔记第2章/</a>
         </li>
         
         <li>
@@ -340,7 +368,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://wangtianyu0222.github.io/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://wangtianyu0222.github.io/2020/04/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -355,18 +383,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2222/02/22/%E6%9C%AC%E7%AB%99%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          日记/2020.4.14
+          本站说明
         
       </div>
     </a>
   
   
-    <a href="/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC1%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">读书笔记/算法笔记第1章</div>
+    <a href="/2020/04/23/%E6%97%A5%E8%AE%B0/2020.4.23/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日记/2020.4.23</div>
       <i class="icon-circle-right"></i>
     </a>
   
