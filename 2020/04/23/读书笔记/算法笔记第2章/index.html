@@ -18,7 +18,7 @@
 <meta property="og:description" content="第2章 C&#x2F;C++快速入门2.1 基本数据类型2.1.1 变量的定义1变量类型 变量名; 或 1变量类型 变量名 &#x3D; 初值; 变量名注意点： ①不能是语言标识符； ②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线； ③区分大小写。 2.1.2 变量类型1.整型（1）整型 int：绝对值在 1e9 之内可以放心使用。 （2）长整型 long long：超">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-23T04:00:00.000Z">
-<meta property="article:modified_time" content="2020-04-23T14:06:40.155Z">
+<meta property="article:modified_time" content="2020-05-07T01:32:24.211Z">
 <meta property="article:author" content="Tuenity">
 <meta property="article:tag" content="读书笔记">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">449字</span>
+      <span class="post-count">665字</span>
     </span>
   </span>
 
@@ -236,7 +236,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -276,7 +276,35 @@
 <p>const int INF = (1 &lt;&lt; 30) - 1;</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或</span><br></pre></td></tr></table></figure>
 <p>const int INF = 0x3fffffff;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 2.2 顺序结构</span><br><span class="line"></span><br><span class="line">### 2.2.1 赋值表达式</span><br></pre></td></tr></table></figure>
+<p>int n = 5;</p>
+<p>int a, b;<br>a = b = 5;</p>
+<pre><code>
+### 2.2.2 使用scanf和printf输入/输出
 
+#### 1.scanf函数的使用
+scanf不要漏写&amp;。
+
+#### 2.printf函数的使用
+（1）%md
+
+%md可以使不足m位的int型变量以m位进行右对齐输出，其中高位用空格补齐；如果变量本身超过m位，则保持一样。
+
+（2）%0md
+
+%0md只是在%md中间多加了0。和%md的唯一不同在于，当变量不足m位时，将在前面补足足够数量的0而不是空格。
+
+（3）%.mf
+
+%.mf可以让浮点数保留m位小数输出，这个“保留”使用的是精度的“四舍六入五成双”规则。
+
+### 2.2.3 使用 getchar 和 putchar 输入/输出字符
+getchar可以识别换行符。
+
+### 2.2.4 注释
+（1）使用“/**/”注释
+
+（2）</code></pre>
     
 
     
