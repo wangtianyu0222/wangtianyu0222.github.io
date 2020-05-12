@@ -196,7 +196,7 @@
             
 
   
-    <article id="post-日记/2020.4.15" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-019" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -204,7 +204,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/" target="_blank">日记/2020.4.15</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-019/" target="_blank">GPLT/L1-019</a>
   
     </h1>
   
@@ -212,8 +212,8 @@
 
   
   
-<a href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/" class="archive-article-date">
-        <time datetime="2020-04-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+<a href="/2020/05/12/GPLT/L1-019/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.603Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -225,10 +225,19 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>今天早起补了上上周的计算机网络，但是今天的课程就听不下去了，下午的OS实验也是没怎么听，晚上的数学建模开赛会讲得这比赛挺水的， 好像是为了新手体验比赛而设立的，只能尽全力比了，晚上想把明天的大数据做点的，结果发现下载了一晚上。。</p>
-    
-    <a class="article-more-a" href="/2020/04/15/%E6%97%A5%E8%AE%B0/2020.4.15/#more">more >></a>
-    
+    <h1 id="L1-019-谁先倒（模拟）"><a href="#L1-019-谁先倒（模拟）" class="headerlink" title="L1-019 谁先倒（模拟）"></a>L1-019 谁先倒（模拟）</h1><p>划拳是古老中国酒文化的一个有趣的组成部分。酒桌上两人划拳的方法为：每人口中喊出一个数字，同时用手比划出一个数字。如果谁比划出的数字正好等于两人喊出的数字之和，谁就输了，输家罚一杯酒。两人同赢或两人同输则继续下一轮，直到唯一的赢家出现。</p>
+<p>下面给出甲、乙两人的酒量（最多能喝多少杯不倒）和划拳记录，请你判断两个人谁先倒。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入第一行先后给出甲、乙两人的酒量（不超过100的非负整数），以空格分隔。下一行给出一个正整数 <code>N</code>（≤100），随后 <code>N</code> 行，每行给出一轮划拳的记录，格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">甲喊 甲划 乙喊 乙划</span><br></pre></td></tr></table></figure>
+<p>其中 <code>喊</code> 是喊出的数字，<code>划</code> 是划出的数字，均为不超过100的正整数（两只手一起划）。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在第一行中输出先倒下的那个人：<code>A</code> 代表甲，<code>B</code> 代表乙。第二行中输出没倒的那个人喝了多少杯。题目保证有一个人倒下。注意程序处理到有人倒下就终止，后面的数据不必处理。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1 1</span><br><span class="line">6</span><br><span class="line">8 10 9 12</span><br><span class="line">5 10 5 10</span><br><span class="line">3 8 5 12</span><br><span class="line">12 18 1 13</span><br><span class="line">4 16 12 15</span><br><span class="line">15 1 1 16</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>控制循坏，-1的时候即倒下，退出循环。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> num1, num2, N, A1, A2, B1, B2, cnt1 = <span class="number">0</span>, cnt2 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; num1 &gt;&gt; num2;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; A1 &gt;&gt; A2 &gt;&gt; B1 &gt;&gt; B2;</span><br><span class="line">		<span class="keyword">int</span> sum = A1 + B1;</span><br><span class="line">		<span class="keyword">if</span>(A2 == sum &amp;&amp; B2 != sum)</span><br><span class="line">		&#123;</span><br><span class="line">			num1--;</span><br><span class="line">			cnt1++;</span><br><span class="line">		&#125;	</span><br><span class="line">		<span class="keyword">if</span>(B2 == sum &amp;&amp; A2 != sum)</span><br><span class="line">		&#123;</span><br><span class="line">			num2--;</span><br><span class="line">			cnt2++;</span><br><span class="line">		&#125;	</span><br><span class="line">		<span class="keyword">if</span>(num1 == <span class="number">-1</span> || num2 == <span class="number">-1</span>)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(num1 == <span class="number">-1</span>)</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"A"</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; cnt2;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"B"</span> &lt;&lt; <span class="built_in">endl</span> &lt;&lt; cnt1;</span><br><span class="line">	 </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -239,17 +248,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -280,7 +278,7 @@
 
 
   
-    <article id="post-日记/2020.4.14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-018" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -288,7 +286,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/" target="_blank">日记/2020.4.14</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-018/" target="_blank">GPLT/L1-018</a>
   
     </h1>
   
@@ -296,8 +294,8 @@
 
   
   
-<a href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/" class="archive-article-date">
-        <time datetime="2020-04-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-14</time>
+<a href="/2020/05/12/GPLT/L1-018/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.595Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -309,10 +307,24 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>忙碌的一天结束了，感觉今天过得很累，一分一秒都没有浪费，全都在学习，真的只是课太多了，发现平时制定的计划也没有按时完成，等下周开始要开始明确的TODO，不能让自己空闲下来。</p>
-    
-    <a class="article-more-a" href="/2020/04/14/%E6%97%A5%E8%AE%B0/2020.4.14/#more">more >></a>
-    
+    <h1 id="L1-018-大笨钟（模拟）"><a href="#L1-018-大笨钟（模拟）" class="headerlink" title="L1-018 大笨钟（模拟）"></a>L1-018 大笨钟（模拟）</h1><p>微博上有个自称“大笨钟V”的家伙，每天敲钟催促码农们爱惜身体早点睡觉。不过由于笨钟自己作息也不是很规律，所以敲钟并不定时。一般敲钟的点数是根据敲钟时间而定的，如果正好在某个整点敲，那么“当”数就等于那个整点数；如果过了整点，就敲下一个整点数。另外，虽然一天有24小时，钟却是只在后半天敲1~12下。例如在23:00敲钟，就是“当当当当当当当当当当当”，而到了23:01就会是“当当当当当当当当当当当当”。在午夜00:00到中午12:00期间（端点时间包括在内），笨钟是不敲的。</p>
+<p>下面就请你写个程序，根据当前时间替大笨钟敲钟。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入第一行按照 <code>hh:mm</code> 的格式给出当前时间。其中 <code>hh</code> 是小时，在00到23之间；<code>mm</code> 是分钟，在00到59之间。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>根据当前时间替大笨钟敲钟，即在一行中输出相应数量个 <code>Dang</code> 。如果不是敲钟期，则输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Only hh:mm.  Too early to Dang.</span><br></pre></td></tr></table></figure>
+<p>其中 <code>hh:mm</code> 是输入的时间。</p>
+<h3 id="输入样例1"><a href="#输入样例1" class="headerlink" title="输入样例1:"></a>输入样例1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">19:05</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DangDangDangDangDangDangDangDang</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例2"><a href="#输入样例2" class="headerlink" title="输入样例2:"></a>输入样例2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">07:05</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Only 07:05.  Too early to Dang.</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>hh超过12点的记下次数，mm不为0的加一次，没超过的直接输出。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> hh, mm, num = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d:%d"</span>, &amp;hh, &amp;mm);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span>(hh &gt; <span class="number">12</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		num = hh - <span class="number">12</span>;</span><br><span class="line">		<span class="keyword">if</span>(mm != <span class="number">0</span>)</span><br><span class="line">			num++;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"Dang"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Only %02d:%02d.  Too early to Dang."</span>, hh, mm);</span><br><span class="line">	&#125;</span><br><span class="line">	 </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -323,17 +335,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -364,7 +365,7 @@
 
 
   
-    <article id="post-读书笔记/算法笔记第1章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-017" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -372,7 +373,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC1%E7%AB%A0/" target="_blank">读书笔记/算法笔记第1章</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-017/" target="_blank">GPLT/L1-017</a>
   
     </h1>
   
@@ -380,8 +381,8 @@
 
   
   
-<a href="/2020/04/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC1%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-04-13T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
+<a href="/2020/05/12/GPLT/L1-017/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.588Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -393,20 +394,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <a id="more"></a>
-<h1 id="第1章-如何使用本书"><a href="#第1章-如何使用本书" class="headerlink" title="第1章 如何使用本书"></a>第1章 如何使用本书</h1><h2 id="1-1-本书的基本内容"><a href="#1-1-本书的基本内容" class="headerlink" title="1.1 本书的基本内容"></a>1.1 本书的基本内容</h2><p>基本介绍了每一章节对应的内容从C/C++的简单入门到基本数据结构的介绍，再到搜索、树和图，最后介绍一些进阶算法。</p>
-<h2 id="1-2-如何选择编程语言和编译器"><a href="#1-2-如何选择编程语言和编译器" class="headerlink" title="1.2 如何选择编程语言和编译器"></a>1.2 如何选择编程语言和编译器</h2><p>推荐使用带C语法C++，编译器使用Dev-C++、C-Free或Code::Blocks。</p>
-<h2 id="1-3-在线评测系统"><a href="#1-3-在线评测系统" class="headerlink" title="1.3 在线评测系统"></a>1.3 在线评测系统</h2><p>主用PAT和codeup。</p>
-<h2 id="1-4-常见的评测结果"><a href="#1-4-常见的评测结果" class="headerlink" title="1.4 常见的评测结果"></a>1.4 常见的评测结果</h2><p>AC：Accepted——答案正确</p>
-<p>CE：Compile Error——编译错误</p>
-<p>WA：Wrong Answer——答案错误</p>
-<p>TLE：Time Limit Exceeded——运行超时</p>
-<p>RE：Runtime Error——运行错误</p>
-<p>MLE：Memory Limit Exceeded——内存超限</p>
-<p>PE：Presentation Error——格式错误</p>
-<p>OLE：Output Limit Exceeded——输出超限</p>
-<h2 id="1-5-如何高效做题"><a href="#1-5-如何高效做题" class="headerlink" title="1.5 如何高效做题"></a>1.5 如何高效做题</h2><p>按照算法专题进行集中刷题，错题放到队列过段时间回来做，做不出看题解，总结解题方法。</p>
+    <h1 id="L1-017-到底有多二（模拟）"><a href="#L1-017-到底有多二（模拟）" class="headerlink" title="L1-017 到底有多二（模拟）"></a>L1-017 到底有多二（模拟）</h1><p>一个整数 “<strong>犯二的程度</strong>” 定义为该数字中包含2的个数与其位数的比值。如果这个数是负数，则程度增加0.5倍；如果还是个偶数，则再增加1倍。例如数字 <code>-13142223336</code> 是个11位数，其中有3个2，并且是负数，也是偶数，则它的犯二程度计算为：$3/11×1.5×2×100%$ ，约为81.82%。本题就请你计算一个给定整数到底有多二。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入第一行给出一个不超过50位的整数 <code>N</code> 。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中输出 <code>N</code> 犯二的程度，保留小数点后两位。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-13142223336</span><br></pre></td></tr></table></figure>
 
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">81.82%</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>用string处理，第一位判断是否为负数，最后一位判断是否位偶数，用map统计2出现的次数。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> t = <span class="number">1</span>, sum, len;</span><br><span class="line"><span class="built_in">string</span> N;</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">char</span>, <span class="keyword">double</span>&gt; m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">	len = N.length();</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N.length(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(N[i] == <span class="string">'-'</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			t = t * <span class="number">1.5</span>;</span><br><span class="line">			len--;</span><br><span class="line">		&#125;	</span><br><span class="line">		<span class="keyword">if</span>(i == N.length()<span class="number">-1</span> &amp;&amp; (N[i]-<span class="string">'0'</span>) % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">			t = t * <span class="number">2</span>;</span><br><span class="line">		m[N[i]]++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; fixed &lt;&lt; setprecision(<span class="number">2</span>) &lt;&lt; t * m[<span class="string">'2'</span>] / len * <span class="number">100</span> &lt;&lt; <span class="string">"%"</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -417,17 +414,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -458,7 +444,7 @@
 
 
   
-    <article id="post-日记/2020.4.13" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-016" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -466,7 +452,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/13/%E6%97%A5%E8%AE%B0/2020.4.13/" target="_blank">日记/2020.4.13</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-016/" target="_blank">GPLT/L1-016</a>
   
     </h1>
   
@@ -474,8 +460,8 @@
 
   
   
-<a href="/2020/04/13/%E6%97%A5%E8%AE%B0/2020.4.13/" class="archive-article-date">
-        <time datetime="2020-04-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-13</time>
+<a href="/2020/05/12/GPLT/L1-016/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.580Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -487,10 +473,24 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>一天平淡无奇的课程，结果到了晚上宣布了数学建模比赛的通知，忙得不可开交，先把队员给安排了，然后去把组队信息填完。上周的游戏Demo还没怎么做。周三就要开始比赛了，不过还好有两周时间，这几天看来是不用睡觉了。</p>
-    
-    <a class="article-more-a" href="/2020/04/13/%E6%97%A5%E8%AE%B0/2020.4.13/#more">more >></a>
-    
+    <h1 id="L1-016-查验身份证-字符串"><a href="#L1-016-查验身份证-字符串" class="headerlink" title="L1-016 查验身份证(字符串)"></a>L1-016 查验身份证(字符串)</h1><p>一个合法的身份证号码由17位地区、日期编号和顺序编号加1位校验码组成。校验码的计算规则如下：</p>
+<p>首先对前17位数字加权求和，权重分配为：{7，9，10，5，8，4，2，1，6，3，7，9，10，5，8，4，2}；然后将计算的和对11取模得到值 <code>Z</code> ；最后按照以下关系对应 <code>Z</code> 值与校验码 <code>M</code> 的值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Z：0 1 2 3 4 5 6 7 8 9 10</span><br><span class="line">M：1 0 X 9 8 7 6 5 4 3 2</span><br></pre></td></tr></table></figure>
+<p>现在给定一些身份证号码，请你验证校验码的有效性，并输出有问题的号码。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入第一行给出正整数 $N（≤100）$ 是输入的身份证号码的个数。随后$N$行，每行给出1个18位身份证号码。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>按照输入的顺序每行输出1个有问题的身份证号码。这里并不检验前17位是否合理，只检查前17位是否全为数字且最后1位校验码计算准确。如果所有号码都正常，则输出 <code>All passed</code> 。</p>
+<h3 id="输入样例1"><a href="#输入样例1" class="headerlink" title="输入样例1:"></a>输入样例1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">320124198808240056</span><br><span class="line">12010X198901011234</span><br><span class="line">110108196711301866</span><br><span class="line">37070419881216001X</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">12010X198901011234</span><br><span class="line">110108196711301866</span><br><span class="line">37070419881216001X</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例2"><a href="#输入样例2" class="headerlink" title="输入样例2:"></a>输入样例2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">320124198808240056</span><br><span class="line">110108196711301862</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">All passed</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>把对应的权重乘上加起来，再除模换成对应校验码即可。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N, flag = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">20</span>] = &#123;<span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">3</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>&#125;;</span><br><span class="line"><span class="keyword">char</span> t[<span class="number">20</span>] = &#123;<span class="string">'1'</span>, <span class="string">'0'</span>, <span class="string">'X'</span>, <span class="string">'9'</span>, <span class="string">'8'</span>, <span class="string">'7'</span>, <span class="string">'6'</span>, <span class="string">'5'</span>, <span class="string">'4'</span>, <span class="string">'3'</span>, <span class="string">'2'</span>&#125;;</span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; s;</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; s.length()<span class="number">-1</span>; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			sum += a[j] * (s[j] - <span class="string">'0'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		sum = sum % <span class="number">11</span>;</span><br><span class="line">		<span class="keyword">if</span>(t[sum] != s[s.length()<span class="number">-1</span>])</span><br><span class="line">		&#123;</span><br><span class="line">			flag = <span class="number">1</span>;</span><br><span class="line">			<span class="built_in">cout</span> &lt;&lt; s &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(flag == <span class="number">0</span>)</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"All passed"</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -501,17 +501,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -542,7 +531,7 @@
 
 
   
-    <article id="post-日记/2020.4.12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-015" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -550,7 +539,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/12/%E6%97%A5%E8%AE%B0/2020.4.12/" target="_blank">日记/2020.4.12</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-015/" target="_blank">GPLT/L1-015</a>
   
     </h1>
   
@@ -558,8 +547,8 @@
 
   
   
-<a href="/2020/04/12/%E6%97%A5%E8%AE%B0/2020.4.12/" class="archive-article-date">
-        <time datetime="2020-04-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-12</time>
+<a href="/2020/05/12/GPLT/L1-015/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.565Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -571,10 +560,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>发现了一个新的刷题网站AcWing，里面有好多算法的课程，收费挺高的，不过看起来社区的环境还挺和谐的，至少没有广告满天飞。晚上补了作业，感觉做完作业很简单，但是要最好还是需要时间的。</p>
-    
-    <a class="article-more-a" href="/2020/04/12/%E6%97%A5%E8%AE%B0/2020.4.12/#more">more >></a>
-    
+    <h1 id="L1-015-跟奥巴马一起画方块（格式化输出）"><a href="#L1-015-跟奥巴马一起画方块（格式化输出）" class="headerlink" title="L1-015 跟奥巴马一起画方块（格式化输出）"></a>L1-015 跟奥巴马一起画方块（格式化输出）</h1><p>美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出正方形边长 $N（3≤N≤21）$ 和组成正方形边的某种字符 <code>C</code> ，间隔一个空格。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出由给定字符 <code>C</code> 画出的正方形。但是注意到行间距比列间距大，所以为了让结果看上去更像正方形，我们输出的行数实际上是列数的50%（四舍五入取整）。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10 a</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">aaaaaaaaaa</span><br><span class="line">aaaaaaaaaa</span><br><span class="line">aaaaaaaaaa</span><br><span class="line">aaaaaaaaaa</span><br><span class="line">aaaaaaaaaa</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>四舍五入可以用round()函数。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N, space, c;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%c%c"</span>, &amp;N, &amp;space, &amp;c); </span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= round(<span class="number">1.0</span>*N/<span class="number">2</span>); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= N; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%c"</span>, c);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -585,17 +580,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -626,7 +610,7 @@
 
 
   
-    <article id="post-日记/2020.4.11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-014" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -634,7 +618,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/11/%E6%97%A5%E8%AE%B0/2020.4.11/" target="_blank">日记/2020.4.11</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-014/" target="_blank">GPLT/L1-014</a>
   
     </h1>
   
@@ -642,8 +626,8 @@
 
   
   
-<a href="/2020/04/11/%E6%97%A5%E8%AE%B0/2020.4.11/" class="archive-article-date">
-        <time datetime="2020-04-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
+<a href="/2020/05/12/GPLT/L1-014/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.473Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -655,10 +639,14 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>周末就应该休息，把慕课稍微补了补就开始休闲了。挑了一个下午的书，不货比全平台，就怕自己买亏了。。开始慢慢补GPLT，一些曾经用C语言都能秒掉的题目，现在做要卡好久，果然还是得多刷刷题。</p>
-    
-    <a class="article-more-a" href="/2020/04/11/%E6%97%A5%E8%AE%B0/2020.4.11/#more">more >></a>
-    
+    <h1 id="L1-014-简单题（格式化输出）"><a href="#L1-014-简单题（格式化输出）" class="headerlink" title="L1-014 简单题（格式化输出）"></a>L1-014 简单题（格式化输出）</h1><p>这次真的没骗你 —— 这道超级简单的题目没有任何输入。</p>
+<p>你只需要在一行中输出事实：<code>This is a simple problem.</code> 就可以了。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">无</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This is a simple problem.</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"This is a simple problem."</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -669,17 +657,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -710,7 +687,7 @@
 
 
   
-    <article id="post-日记/2020.4.10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-013" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -718,7 +695,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/10/%E6%97%A5%E8%AE%B0/2020.4.10/" target="_blank">日记/2020.4.10</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-013/" target="_blank">GPLT/L1-013</a>
   
     </h1>
   
@@ -726,8 +703,8 @@
 
   
   
-<a href="/2020/04/10/%E6%97%A5%E8%AE%B0/2020.4.10/" class="archive-article-date">
-        <time datetime="2020-04-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-10</time>
+<a href="/2020/05/12/GPLT/L1-013/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.464Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -739,10 +716,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>早上把微积分水完，下午把数学建模水完，好了，又是一个星期的课程结束了。晚上上了上形势政治课，其实一直在家也没有怎么关注新闻，现在看了看，感觉抗疫期间的故事挺感动的。然后开了GPLT，准备慢慢把题目补全，这比赛不能用Python属实奇怪。</p>
-    
-    <a class="article-more-a" href="/2020/04/10/%E6%97%A5%E8%AE%B0/2020.4.10/#more">more >></a>
-    
+    <h1 id="L1-013-计算阶乘和（数学计算）"><a href="#L1-013-计算阶乘和（数学计算）" class="headerlink" title="L1-013 计算阶乘和（数学计算）"></a>L1-013 计算阶乘和（数学计算）</h1><p>对于给定的正整数 $N$ ，需要你计算 $S=1!+2!+3!+…+N!$ 。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出一个不超过10的正整数 $N$ 。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中输出 $S$ 的值。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>本题数据小，就用递归实现阶乘了。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N, sum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fac</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(n == <span class="number">0</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> n * fac(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		sum += fac(i);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; sum;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -753,17 +736,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -794,7 +766,7 @@
 
 
   
-    <article id="post-日记/2020.4.9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-012" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -802,7 +774,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/09/%E6%97%A5%E8%AE%B0/2020.4.9/" target="_blank">日记/2020.4.9</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-012/" target="_blank">GPLT/L1-012</a>
   
     </h1>
   
@@ -810,8 +782,8 @@
 
   
   
-<a href="/2020/04/09/%E6%97%A5%E8%AE%B0/2020.4.9/" class="archive-article-date">
-        <time datetime="2020-04-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
+<a href="/2020/05/12/GPLT/L1-012/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.457Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -823,10 +795,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>早上没有课，就睡了一个早上，真舒服。下午的课也是自由实践，又水了一个下午，晚上写了个刷题总结，不知道我一天都把时间浪费在了哪里，不过就当作休息了一天吧。</p>
-    
-    <a class="article-more-a" href="/2020/04/09/%E6%97%A5%E8%AE%B0/2020.4.9/#more">more >></a>
-    
+    <h1 id="L1-012-计算指数（数学计算）"><a href="#L1-012-计算指数（数学计算）" class="headerlink" title="L1-012 计算指数（数学计算）"></a>L1-012 计算指数（数学计算）</h1><p>真的没骗你，这道才是简单题 —— 对任意给定的不超过 10 的正整数 $n$ ，要求你输出 ${2^{n}}​​$​​ 。不难吧？</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出一个不超过 10 的正整数 $n$ 。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中按照格式 <code>2^n = 计算结果</code> 输出 ${2^{n}}​​$  的值。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2^5 &#x3D; 32</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>直接用math库的pow()函数计算输出。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"2^"</span> &lt;&lt; n &lt;&lt; <span class="string">" = "</span> &lt;&lt; <span class="built_in">pow</span>(<span class="number">2</span>, n);</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -837,17 +815,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -878,7 +845,7 @@
 
 
   
-    <article id="post-日记/2020.4.8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-011" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -886,7 +853,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/08/%E6%97%A5%E8%AE%B0/2020.4.8/" target="_blank">日记/2020.4.8</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-011/" target="_blank">GPLT/L1-011</a>
   
     </h1>
   
@@ -894,8 +861,8 @@
 
   
   
-<a href="/2020/04/08/%E6%97%A5%E8%AE%B0/2020.4.8/" class="archive-article-date">
-        <time datetime="2020-04-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-08</time>
+<a href="/2020/05/12/GPLT/L1-011/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.449Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -907,10 +874,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>早上起来补了补上周计算机网络的笔记，没补完，又开始上课了。下午OS实验报告也是双周报告，突然感觉闲下来了，晚上补了点作业，无事发生。</p>
-    
-    <a class="article-more-a" href="/2020/04/08/%E6%97%A5%E8%AE%B0/2020.4.8/#more">more >></a>
-    
+    <h1 id="L1-011-A-B（字符串）"><a href="#L1-011-A-B（字符串）" class="headerlink" title="L1-011 A-B（字符串）"></a>L1-011 A-B（字符串）</h1><p>本题要求你计算 $A−B$ 。不过麻烦的是，$A$和$B$都是字符串 —— 即从字符串$A$中把字符串$B$所包含的字符全删掉，剩下的字符组成的就是字符串 $A−B$ 。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在2行中先后给出字符串$A$和$B$。两字符串的长度都不超过${10^{4}}$<br>​​ ，并且保证每个字符串都是由可见的ASCII码和空白字符组成，最后以换行符结束。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中打印出 $A−B$ 的结果字符串。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">I love GPLT!  It&#39;s a fun game!</span><br><span class="line">aeiou</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I lv GPLT!  It&#39;s  fn gm!</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>遍历两个字符串，保留在A串并且不在B串的字符，然后输出。注意如果用string不能直接用cin，因为cin读入到空格会结束。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> A, B, t = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	getline(<span class="built_in">cin</span>, A);</span><br><span class="line">	getline(<span class="built_in">cin</span>, B);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; B.length(); j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(A[i] == B[j])</span><br><span class="line">			&#123;</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;	</span><br><span class="line">		<span class="keyword">if</span>(flag)</span><br><span class="line">			flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			t += A[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; t;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -921,17 +894,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -962,7 +924,7 @@
 
 
   
-    <article id="post-日记/2020.4.7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-GPLT/L1-010" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -970,7 +932,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/04/07/%E6%97%A5%E8%AE%B0/2020.4.7/" target="_blank">日记/2020.4.7</a>
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-010/" target="_blank">GPLT/L1-010</a>
   
     </h1>
   
@@ -978,8 +940,8 @@
 
   
   
-<a href="/2020/04/07/%E6%97%A5%E8%AE%B0/2020.4.7/" class="archive-article-date">
-        <time datetime="2020-04-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
+<a href="/2020/05/12/GPLT/L1-010/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.442Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
 </a>
 
   
@@ -991,10 +953,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>一周从周二开始那就是一直忙，早上的数据库又是光速做题目 ，接下来的大数据可又是很迷地听完。下午的计网实验进入下一个阶段。晚上的训练赛惨遭爆零，果然还是太菜了。</p>
-    
-    <a class="article-more-a" href="/2020/04/07/%E6%97%A5%E8%AE%B0/2020.4.7/#more">more >></a>
-    
+    <h1 id="L1-010-比较大小-排序"><a href="#L1-010-比较大小-排序" class="headerlink" title="L1-010 比较大小(排序)"></a>L1-010 比较大小(排序)</h1><p>本题要求将输入的任意3个整数从小到大输出。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出3个整数，其间以空格分隔。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中将3个整数从小到大输出，其间以 “-&gt;” 相连。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4 2 8</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2-&gt;4-&gt;8</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>放进vector中排序，然后从小到大格式化输出。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> t;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">		v.push_back(t);</span><br><span class="line">	&#125;</span><br><span class="line">	sort(v.begin(), v.end());</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; v[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"-&gt;"</span> &lt;&lt; v[i];</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     
 
     
@@ -1005,17 +973,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -1048,7 +1005,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 
