@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wangtianyu0222.github.io">
-  <title>Tuenity&#39;s blog</title>
+  <title>日记/2020.5.26 | Tuenity&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tuenity&#39;s blog">
-<meta property="og:url" content="http://wangtianyu0222.github.io/page/7/index.html">
+  <meta name="description" content="ACM又是没什么进步，卡在后几名，基础不是很行，还得继续努力。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日记&#x2F;2020.5.26">
+<meta property="og:url" content="http://wangtianyu0222.github.io/2020/05/26/%E6%97%A5%E8%AE%B0/2020.5.26/index.html">
 <meta property="og:site_name" content="Tuenity&#39;s blog">
+<meta property="og:description" content="ACM又是没什么进步，卡在后几名，基础不是很行，还得继续努力。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-27T00:33:48.915Z">
 <meta property="article:author" content="Tuenity">
+<meta property="article:tag" content="日记">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Tuenity&#39;s blog" type="application/atom+xml">
@@ -193,286 +194,87 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-GPLT/L1-003" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-日记/2020.5.26" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/12/GPLT/L1-003/" target="_blank">GPLT/L1-003</a>
-  
+    <h1 class="article-title" itemprop="name">
+      日记/2020.5.26
     </h1>
   
 
 
   
   
-<a href="/2020/05/12/GPLT/L1-003/" class="archive-article-date">
-        <time datetime="2020-05-12T09:37:43.386Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/05/26/%E6%97%A5%E8%AE%B0/2020.5.26/" class="archive-article-date">
+        <time datetime="2020-05-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
 </a>
 
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">25字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="L1-003-个位数统计（map）"><a href="#L1-003-个位数统计（map）" class="headerlink" title="L1-003 个位数统计（map）"></a>L1-003 个位数统计（map）</h1><p>给定一个 k 位整数 ${N = d_{k-1}10^{k-1}+ ··· +d_{1}10^{1}+d_{0}(0 \le d_{i} \le 9,i = 0,···,k-1,d_{k-1} \ge 0)}$ ，请编写程序统计每种不同的个位数字出现的次数。例如：给定 ${ N = 100311}$ ，则有 2 个 0，3 个 1，和 1 个 3。</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>每个输入包含 1 个测试用例，即一个不超过 1000 位的正整数 $N$ 。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>对 $N$ 中每一种不同的个位数字，以 <code>D:M</code> 的格式在一行中输出该位数字 <code>D</code> 及其在 $N$ 中出现的次数 <code>M</code> 。要求按 <code>D</code> 的升序输出。</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">100311</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0:2</span><br><span class="line">1:3</span><br><span class="line">3:1</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>因为map有默认按key自动升序排序的功能，所以直接用map统计一下即可。</p>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">char</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; s;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i; i &lt; s.length(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		m[s[i]]++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> it = m.begin(); it != m.end(); it++) </span><br><span class="line">	&#123;</span><br><span class="line">    		<span class="built_in">cout</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="string">":"</span> &lt;&lt; it-&gt;second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  	&#125;</span><br><span class="line">	</span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-    
+    <p>ACM又是没什么进步，卡在后几名，基础不是很行，还得继续努力。</p>
+<a id="more"></a>
+<p><img src alt="2020.5.26"></p>
 
     
 
     
 
-  </div>
-  <div class="article-info article-info-index">
     
-    
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Tuenity
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://wangtianyu0222.github.io/2020/05/26/日记/2020.5.26/" title="日记/2020.5.26" target="_blank">http://wangtianyu0222.github.io/2020/05/26/日记/2020.5.26/</a>
+        </li>
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
         
-        
+      </ul>
     </div>
-</aside>
-
-
-
-
-  
-    <article id="post-GPLT/L1-002" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/12/GPLT/L1-002/" target="_blank">GPLT/L1-002</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/12/GPLT/L1-002/" class="archive-article-date">
-        <time datetime="2020-05-12T09:37:43.378Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="L1-002-打印沙漏（循环控制）"><a href="#L1-002-打印沙漏（循环控制）" class="headerlink" title="L1-002 打印沙漏（循环控制）"></a>L1-002 打印沙漏（循环控制）</h1><p>本题要求你写个程序把给定的符号打印成沙漏的形状。例如给定17个 “*” ，要求按下列格式打印</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*****</span><br><span class="line"> ***</span><br><span class="line">  *</span><br><span class="line"> ***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
-
-
-<p>所谓“沙漏形状”，是指每行输出奇数个符号；各行符号中心对齐；相邻两行符号数差2；符号数先从大到小顺序递减到1，再从小到大顺序递增；首尾符号数相等。</p>
-<p>给定任意 $N$ 个符号，不一定能正好组成一个沙漏。要求打印出的沙漏能用掉尽可能多的符号。</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行给出1个正整数 $N$（≤1000）和一个符号，中间以空格分隔。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>首先打印出由给定符号组成的最大的沙漏形状，最后在一行中输出剩下没用掉的符号数。</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">19 *</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*****</span><br><span class="line"> ***</span><br><span class="line">  *</span><br><span class="line"> ***</span><br><span class="line">*****</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>先计算出可以打印的符号数：1，1+3+3，1+3+3+5+5···通过循坏就可以求出不同层的打印数，记下剩余的符号数。然后分成上下两块，控制空格和符号的循环就行了。主要考察循环的控制，仔细调过去不难的。</p>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N, space, c, a = <span class="number">1</span>, b = <span class="number">1</span>, num, res;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%c%c"</span>, &amp;N, &amp;space, &amp;c); </span><br><span class="line">	<span class="keyword">if</span>(N == <span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%c\n0"</span>, c);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			b += <span class="number">4</span>*i+<span class="number">2</span>;</span><br><span class="line">			<span class="keyword">if</span>(N &lt;= b)</span><br><span class="line">			&#123;</span><br><span class="line">				num = i;</span><br><span class="line">				res = N - a;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			a = b;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>*num<span class="number">-2</span>*i<span class="number">-1</span>; j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"%c"</span>, c);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; num; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; num-i<span class="number">-1</span>; j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>*i+<span class="number">1</span>; j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"%c"</span>, c);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d"</span>, res);	</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-GPLT/L1-001" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/12/GPLT/L1-001/" target="_blank">GPLT/L1-001</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/12/GPLT/L1-001/" class="archive-article-date">
-        <time datetime="2020-05-12T09:37:43.368Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="L1-001-Hello-World（格式化输出）"><a href="#L1-001-Hello-World（格式化输出）" class="headerlink" title="L1-001 Hello World（格式化输出）"></a>L1-001 Hello World（格式化输出）</h1><p>这道超级简单的题目没有任何输入。</p>
-<p>你只需要在一行中输出著名短句 “Hello World!” 就可以了。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">无</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>直接输出。</p>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-日记/2020.5.12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/12/%E6%97%A5%E8%AE%B0/2020.5.12/" target="_blank">日记/2020.5.12</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/12/%E6%97%A5%E8%AE%B0/2020.5.12/" class="archive-article-date">
-        <time datetime="2020-05-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>体验线下满课的周二，真的是半个学校跑教室，早上七点出门到晚上十一点回寝，在教室里也只能戴口罩，虽然累，但是收获还是挺多的，明天也要继续努力！</p>
-    
-    <a class="article-more-a" href="/2020/05/12/%E6%97%A5%E8%AE%B0/2020.5.12/#more">more >></a>
-    
-    
-
-    
-
     
 
   </div>
@@ -495,10 +297,83 @@
     
 
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://wangtianyu0222.github.io/2020/05/26/%E6%97%A5%E8%AE%B0/2020.5.26/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2222/02/22/%E6%9C%AC%E7%AB%99%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          本站说明
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/25/%E6%97%A5%E8%AE%B0/2020.5.25/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日记/2020.5.25</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -519,574 +394,35 @@
 
 
 
-  
-    <article id="post-日记/2020.5.11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/11/%E6%97%A5%E8%AE%B0/2020.5.11/" target="_blank">日记/2020.5.11</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/2020/05/11/%E6%97%A5%E8%AE%B0/2020.5.11/" class="archive-article-date">
-        <time datetime="2020-05-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
 
-  
-  
-    
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname =
+    'true'; // required: replace example with your forum shortname
 
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>回校线下上课的第一天，课堂秩序管理得挺好的，但是食堂就因为只有几处开放，所以会特别拥挤，逐渐适应校园生活。</p>
-    
-    <a class="article-more-a" href="/2020/05/11/%E6%97%A5%E8%AE%B0/2020.5.11/#more">more >></a>
-    
-    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 
-    
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by
+      Disqus.</a></noscript>
+</section>
 
-    
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-    
 
-    
 
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
 
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-读书笔记/算法竞赛入门经典第2章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/10/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC2%E7%AB%A0/" target="_blank">读书笔记/算法竞赛入门经典第2章</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/10/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC2%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-05-10T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <a id="more"></a>
-<h1 id="第2章-循环结构程序设计"><a href="#第2章-循环结构程序设计" class="headerlink" title="第2章 循环结构程序设计"></a>第2章 循环结构程序设计</h1><h2 id="2-1-for循环"><a href="#2-1-for循环" class="headerlink" title="2.1 for循环"></a>2.1 for循环</h2><p>for循环的格式：<code>for(初始化; 条件; 调整) 循环体;</code></p>
-<p>浮点数可能存在误差，在进行浮点数比较时，应考虑到浮点数误差。</p>
-<h2 id="2-2-while循环和do-while循环"><a href="#2-2-while循环和do-while循环" class="headerlink" title="2.2 while循环和do-while循环"></a>2.2 while循环和do-while循环</h2><p>while循环的格式：<code>while(条件) 循环体;</code></p>
-<p>do-while循环的格式：<code>do{循环体;}while(条件);</code></p>
-<h2 id="2-3循环的代价"><a href="#2-3循环的代价" class="headerlink" title="2.3循环的代价"></a>2.3循环的代价</h2>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-日记/2020.5.10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/10/%E6%97%A5%E8%AE%B0/2020.5.10/" target="_blank">日记/2020.5.10</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/10/%E6%97%A5%E8%AE%B0/2020.5.10/" class="archive-article-date">
-        <time datetime="2020-05-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>补了补计网，做了点数据库，就算一天没课也做不了太多的东西，果然只会浪费时间。假期的最后一天，明天开始正式线下上课，又要回归到正常的校园生活。</p>
-    
-    <a class="article-more-a" href="/2020/05/10/%E6%97%A5%E8%AE%B0/2020.5.10/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-日记/2020.5.9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/09/%E6%97%A5%E8%AE%B0/2020.5.9/" target="_blank">日记/2020.5.9</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/09/%E6%97%A5%E8%AE%B0/2020.5.9/" class="archive-article-date">
-        <time datetime="2020-05-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-09</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>在学校的第一天网课，感觉在寝室里学习至少比家里学习要稍微认真一点，可能有学习氛围了。不过下周开始又要跑教室里学习，就很累。</p>
-    
-    <a class="article-more-a" href="/2020/05/09/%E6%97%A5%E8%AE%B0/2020.5.9/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-读书笔记/算法笔记第2章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" target="_blank">读书笔记/算法笔记第2章</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E7%AC%AC2%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-05-08T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <a id="more"></a>
-<h1 id="第2章-C-C-快速入门"><a href="#第2章-C-C-快速入门" class="headerlink" title="第2章 C/C++快速入门"></a>第2章 C/C++快速入门</h1><h2 id="2-1-基本数据类型"><a href="#2-1-基本数据类型" class="headerlink" title="2.1 基本数据类型"></a>2.1 基本数据类型</h2><h3 id="2-1-1-变量的定义"><a href="#2-1-1-变量的定义" class="headerlink" title="2.1.1 变量的定义"></a>2.1.1 变量的定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名;</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量类型 变量名 &#x3D; 初值;</span><br></pre></td></tr></table></figure>
-<p>变量名注意点：</p>
-<p>①不能是语言标识符；</p>
-<p>②第一个字符必须是字母或下划线，除第一个字符之外的其他字符必须是字母、数字或下划线；</p>
-<p>③区分大小写。</p>
-<h3 id="2-1-2-变量类型"><a href="#2-1-2-变量类型" class="headerlink" title="2.1.2 变量类型"></a>2.1.2 变量类型</h3><h4 id="1-整型"><a href="#1-整型" class="headerlink" title="1.整型"></a>1.整型</h4><p>（1）整型 <code>int</code>：绝对值在 <code>1e9</code> 之内可以放心使用。</p>
-<p>（2）长整型 <code>long long</code>：超过 <code>int</code> 时使用，初值太大需要在后面加 <code>LL</code>。<code>unsigned</code> 可以将负数范围移到正数上。</p>
-<h4 id="2-浮点型"><a href="#2-浮点型" class="headerlink" title="2.浮点型"></a>2.浮点型</h4><p>（1）单精度 <code>float</code>：有效精度6-7位。</p>
-<p>（2）双精度 <code>double</code>：有效精度15-16位，因此浮点类型尽量使用 <code>double</code>。</p>
-<h4 id="3-字符型"><a href="#3-字符型" class="headerlink" title="3.字符型"></a>3.字符型</h4><p>（1）字符变量和字符常量</p>
-<p>使用ASCII码。</p>
-<p>（2）转义字符</p>
-<p>\n表示换行，\0表示空字符NULL。</p>
-<p>（3）字符串常量</p>
-<p>C中有字符数组，C++中有string类型。</p>
-<h4 id="4-布尔型"><a href="#4-布尔型" class="headerlink" title="4.布尔型"></a>4.布尔型</h4><p>C语言使用必须添加 <code>#include &lt;stdbool.h&gt;</code> 头文件。0为false，非0为true，false为0，true为1。</p>
-<h3 id="2-1-3-强制类型转换"><a href="#2-1-3-强制类型转换" class="headerlink" title="2.1.3 强制类型转换"></a>2.1.3 强制类型转换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(新类型名)变量名</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-1-4-符号常量和const常量"><a href="#2-1-4-符号常量和const常量" class="headerlink" title="2.1.4 符号常量和const常量"></a>2.1.4 符号常量和const常量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 常量</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const 数据类型 变量名 &#x3D; 常量;</span><br></pre></td></tr></table></figure>
-<p>虽然以上都能定义常量，但是推荐使用 <code>const</code> 写法。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define 标识符 任何语句或片段</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>定义注意加括号。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.1.5 运算符</span><br><span class="line"></span><br><span class="line">#### 1.算术运算符</span><br><span class="line">++i是先加1在使用i，而i++是先使用i再加1。</span><br><span class="line"></span><br><span class="line">#### 2.关系运算符</span><br><span class="line"></span><br><span class="line">#### 3.逻辑运算符</span><br><span class="line"></span><br><span class="line">#### 4.条件运算符</span><br><span class="line">唯一的三目运算符：( ? : )</span><br><span class="line"></span><br><span class="line">#### 5.位运算符</span><br><span class="line">定义无穷大</span><br></pre></td></tr></table></figure>
-<p>const int INF = (1 &lt;&lt; 30) - 1;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或</span><br></pre></td></tr></table></figure>
-<p>const int INF = 0x3fffffff;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 2.2 顺序结构</span><br><span class="line"></span><br><span class="line">### 2.2.1 赋值表达式</span><br></pre></td></tr></table></figure>
-<p>int n = 5;</p>
-<p>int a, b;<br>a = b = 5;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.2.2 使用scanf和printf输入&#x2F;输出</span><br><span class="line"></span><br><span class="line">#### 1.scanf函数的使用</span><br><span class="line">scanf不要漏写&amp;。</span><br><span class="line"></span><br><span class="line">#### 2.printf函数的使用</span><br><span class="line">（1）%md</span><br><span class="line"></span><br><span class="line">%md可以使不足m位的int型变量以m位进行右对齐输出，其中高位用空格补齐；如果变量本身超过m位，则保持一样。</span><br><span class="line"></span><br><span class="line">（2）%0md</span><br><span class="line"></span><br><span class="line">%0md只是在%md中间多加了0。和%md的唯一不同在于，当变量不足m位时，将在前面补足足够数量的0而不是空格。</span><br><span class="line"></span><br><span class="line">（3）%.mf</span><br><span class="line"></span><br><span class="line">%.mf可以让浮点数保留m位小数输出，这个“保留”使用的是精度的“四舍六入五成双”规则。</span><br><span class="line"></span><br><span class="line">### 2.2.3 使用 getchar 和 putchar 输入&#x2F;输出字符</span><br><span class="line">getchar可以识别换行符。</span><br><span class="line"></span><br><span class="line">### 2.2.4 注释</span><br><span class="line">（1）使用“&#x2F;**&#x2F;”注释</span><br><span class="line"></span><br><span class="line">可以注释若干连续行的内容。</span><br><span class="line"></span><br><span class="line">（2）使用“&#x2F;&#x2F;”注释</span><br><span class="line"></span><br><span class="line">注释仅限于行。</span><br><span class="line"></span><br><span class="line">### 2.2.5 typedef</span><br><span class="line"></span><br><span class="line">可以给复杂的数据类型定义一个别名，提高编码效率。</span><br><span class="line"></span><br><span class="line">### 2.2.6 常用math函数</span><br><span class="line"></span><br><span class="line">#### 1.fabs(double x) </span><br><span class="line">对double型变量取绝对值。</span><br><span class="line"></span><br><span class="line">#### 2.floor(double x)和ceil(double x)</span><br><span class="line">对double变量向下取整和向上取整。</span><br><span class="line"></span><br><span class="line">#### 3.pow(double r, double p)</span><br><span class="line">返回 $r^p$。</span><br><span class="line"></span><br><span class="line">#### 4.sqrt(double x)</span><br><span class="line">返回double型变量的算术平方根。</span><br><span class="line"></span><br><span class="line">#### 5.log(double x)</span><br><span class="line">返回double型变量以自然数为底的对数。若需要其他底数，需用换底公式计算：$log_ab &#x3D; log_eb &#x2F; log_ea$。</span><br><span class="line"></span><br><span class="line">#### 6.sin(double x)、cos(double x)和tan(double x)</span><br><span class="line">分别返回double型变量的正弦值、余弦值和正切值。</span><br><span class="line"></span><br><span class="line">#### 7.asin(double x)、acos(double x)和atan(double x)</span><br><span class="line">分别返回double型变量的反正弦值、反余弦值和反正切值。</span><br><span class="line"></span><br><span class="line">#### 8.round(double x)</span><br><span class="line">将double型变量四舍五入。</span><br><span class="line"></span><br><span class="line">## 2.3 选择结构</span><br><span class="line"></span><br><span class="line">### 2.3.1 if语句</span><br><span class="line">&#96;&#96;&#96;cpp</span><br><span class="line">if(n &#x3D;&#x3D; 0) -&gt; if(!n)</span><br><span class="line">if(n !&#x3D; 0) -&gt; if(n)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-2-if语句的嵌套"><a href="#2-3-2-if语句的嵌套" class="headerlink" title="2.3.2 if语句的嵌套"></a>2.3.2 if语句的嵌套</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(A)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(B)</span><br><span class="line">	&#123;</span><br><span class="line">		···</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		···</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-3-switch语句"><a href="#2-3-3-switch语句" class="headerlink" title="2.3.3 switch语句"></a>2.3.3 switch语句</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(op)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">1</span>:···<span class="keyword">break</span>;</span><br><span class="line">	···</span><br><span class="line">	<span class="keyword">default</span>:···<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-4-循环结构"><a href="#2-4-循环结构" class="headerlink" title="2.4 循环结构"></a>2.4 循环结构</h2><h3 id="2-4-1-while语句"><a href="#2-4-1-while语句" class="headerlink" title="2.4.1 while语句"></a>2.4.1 while语句</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(A)</span><br><span class="line">&#123;</span><br><span class="line">	···</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-2-do···while语句"><a href="#2-4-2-do···while语句" class="headerlink" title="2.4.2 do···while语句"></a>2.4.2 do···while语句</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	···</span><br><span class="line">&#125;<span class="keyword">while</span>(A);</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-3-for语句"><a href="#2-4-3-for语句" class="headerlink" title="2.4.3 for语句"></a>2.4.3 for语句</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(A; B; C)</span><br><span class="line">&#123;</span><br><span class="line">	···</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-4-break和continue语句"><a href="#2-4-4-break和continue语句" class="headerlink" title="2.4.4 break和continue语句"></a>2.4.4 break和continue语句</h3><p>break：退出当前循环；</p>
-<p>continue：结束循环的当前轮回</p>
-<h2 id="2-5-数组"><a href="#2-5-数组" class="headerlink" title="2.5 数组"></a>2.5 数组</h2><h3 id="2-5-1-一维数组"><a href="#2-5-1-一维数组" class="headerlink" title="2.5.1 一维数组"></a>2.5.1 一维数组</h3><figure class="highlight plain"><figcaption><span>数组名[数组大小];```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在定义了长度为size的一维数组后，只能访问下标为0~size-1的元素。</span><br><span class="line"></span><br><span class="line">### 2.5.2 冒泡排序</span><br><span class="line">冒泡排序的本质在于交换，即每次通过交换的方式把当前剩余元素的最大值移动到一端，而当剩余元素减少为0时，排序结束。</span><br><span class="line"></span><br><span class="line">### 2.5.3 二维数组</span><br><span class="line">&#96;&#96;&#96;数据类型 数组名[第一维大小][第二维大小];</span><br></pre></td></tr></table></figure>
-
-<p>如果数组大小较大（大概$10^6$级别），则需要将其定义在主函数外面，否则会使程序异常退出，原因是函数内部申请的局部变量来自系统栈，允许申请的空间较小；而函数外部申请的全局变量来自静态存储区，允许申请的空间较大。</p>
-<h3 id="2-5-4-memset——对数组中每一个元素赋相同的值"><a href="#2-5-4-memset——对数组中每一个元素赋相同的值" class="headerlink" title="2.5.4 memset——对数组中每一个元素赋相同的值"></a>2.5.4 memset——对数组中每一个元素赋相同的值</h3><p><code>memset(数组名, 值, sizeof(数组名));</code></p>
-<p>memset使用的是按字节赋值，速度快，但是只建议赋0或-1，因为二进制补码为全0或全1。二维数组及多维数组的赋值方法也是一样的。</p>
-<h3 id="2-5-5-字符数组"><a href="#2-5-5-字符数组" class="headerlink" title="2.5.5 字符数组"></a>2.5.5 字符数组</h3><h4 id="1-字符数组的初始化"><a href="#1-字符数组的初始化" class="headerlink" title="1.字符数组的初始化"></a>1.字符数组的初始化</h4>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-读书笔记/算法竞赛入门经典第1章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC1%E7%AB%A0/" target="_blank">读书笔记/算法竞赛入门经典第1章</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC1%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-05-08T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <a id="more"></a>
-<h1 id="第1章-程序设计入门"><a href="#第1章-程序设计入门" class="headerlink" title="第1章 程序设计入门"></a>第1章 程序设计入门</h1><h2 id="1-1-算术表达式"><a href="#1-1-算术表达式" class="headerlink" title="1.1 算术表达式"></a>1.1 算术表达式</h2><p>整数值用%d输出，实数用%f输出。</p>
-<p>整数/整数=整数，浮点数/浮点数=浮点数。</p>
-<h2 id="1-2-变量及其输入"><a href="#1-2-变量及其输入" class="headerlink" title="1.2 变量及其输入"></a>1.2 变量及其输入</h2><p>scanf中的占位符和变量的数据类型应一一对应，且每个变量前需要加“&amp;”符号。</p>
-<p>尽量使用const关键字声明常数。</p>
-<h2 id="1-3-顺序结构程序设计"><a href="#1-3-顺序结构程序设计" class="headerlink" title="1.3 顺序结构程序设计"></a>1.3 顺序结构程序设计</h2><p>交换两个变量的三变量法适用范围广，推荐使用。</p>
-<h2 id="1-4-分支结构程序设计"><a href="#1-4-分支结构程序设计" class="headerlink" title="1.4 分支结构程序设计"></a>1.4 分支结构程序设计</h2><p>C语言中的逻辑运算符都是短路运算符。</p>
-<p>“//”单行注释，“/**/”多行注释。</p>
-<h2 id="1-5-注解与习题"><a href="#1-5-注解与习题" class="headerlink" title="1.5 注解与习题"></a>1.5 注解与习题</h2><h3 id="1-5-1-C语言、C99、C11及其他"><a href="#1-5-1-C语言、C99、C11及其他" class="headerlink" title="1.5.1 C语言、C99、C11及其他"></a>1.5.1 C语言、C99、C11及其他</h3><p>建议把C语言程序当作C++程序提交。</p>
-<h3 id="1-5-2-数据类型和输入格式"><a href="#1-5-2-数据类型和输入格式" class="headerlink" title="1.5.2 数据类型和输入格式"></a>1.5.2 数据类型和输入格式</h3><p>编译器会把斜线“\\”理解成“\”。</p>
-<h3 id="1-5-3-习题"><a href="#1-5-3-习题" class="headerlink" title="1.5.3 习题"></a>1.5.3 习题</h3><h3 id="1-5-4-小结"><a href="#1-5-4-小结" class="headerlink" title="1.5.4 小结"></a>1.5.4 小结</h3><p>重视实验、学会模仿。</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/6/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/8/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1126,8 +462,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
