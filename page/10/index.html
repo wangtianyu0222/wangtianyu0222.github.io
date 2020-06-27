@@ -196,6 +196,85 @@
             
 
   
+    <article id="post-GPLT/L1-004" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/05/12/GPLT/L1-004/" target="_blank">GPLT/L1-004</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/05/12/GPLT/L1-004/" class="archive-article-date">
+        <time datetime="2020-05-12T09:37:43.394Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="L1-004-计算摄氏温度（数学计算）"><a href="#L1-004-计算摄氏温度（数学计算）" class="headerlink" title="L1-004 计算摄氏温度（数学计算）"></a>L1-004 计算摄氏温度（数学计算）</h1><p>给定一个华氏温度 $F$ ，本题要求编写程序，计算对应的摄氏温度 $C$ 。计算公式：${C=5×(F−32)/9}$ 。题目保证输入与输出均在整型范围内。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出一个华氏温度。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中按照格式 “Celsius = C” 输出对应的摄氏温度C的整数值。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">150</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Celsius &#x3D; 65</span><br></pre></td></tr></table></figure>
+
+<h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><p>直接输出计算的数学公式。</p>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> F;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; F;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"Celsius = "</span> &lt;&lt; <span class="number">5</span> * (F - <span class="number">32</span>) / <span class="number">9</span>;</span><br><span class="line">	</span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-GPLT/L1-003" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -939,98 +1018,6 @@
 <h3 id="2-5-4-memset——对数组中每一个元素赋相同的值"><a href="#2-5-4-memset——对数组中每一个元素赋相同的值" class="headerlink" title="2.5.4 memset——对数组中每一个元素赋相同的值"></a>2.5.4 memset——对数组中每一个元素赋相同的值</h3><p><code>memset(数组名, 值, sizeof(数组名));</code></p>
 <p>memset使用的是按字节赋值，速度快，但是只建议赋0或-1，因为二进制补码为全0或全1。二维数组及多维数组的赋值方法也是一样的。</p>
 <h3 id="2-5-5-字符数组"><a href="#2-5-5-字符数组" class="headerlink" title="2.5.5 字符数组"></a>2.5.5 字符数组</h3><h4 id="1-字符数组的初始化"><a href="#1-字符数组的初始化" class="headerlink" title="1.字符数组的初始化"></a>1.字符数组的初始化</h4>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-读书笔记/算法竞赛入门经典第1章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC1%E7%AB%A0/" target="_blank">读书笔记/算法竞赛入门经典第1章</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/05/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC1%E7%AB%A0/" class="archive-article-date">
-        <time datetime="2020-05-08T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <a id="more"></a>
-<h1 id="第1章-程序设计入门"><a href="#第1章-程序设计入门" class="headerlink" title="第1章 程序设计入门"></a>第1章 程序设计入门</h1><h2 id="1-1-算术表达式"><a href="#1-1-算术表达式" class="headerlink" title="1.1 算术表达式"></a>1.1 算术表达式</h2><p>整数值用%d输出，实数用%f输出。</p>
-<p>整数/整数=整数，浮点数/浮点数=浮点数。</p>
-<h2 id="1-2-变量及其输入"><a href="#1-2-变量及其输入" class="headerlink" title="1.2 变量及其输入"></a>1.2 变量及其输入</h2><p>scanf中的占位符和变量的数据类型应一一对应，且每个变量前需要加“&amp;”符号。</p>
-<p>尽量使用const关键字声明常数。</p>
-<h2 id="1-3-顺序结构程序设计"><a href="#1-3-顺序结构程序设计" class="headerlink" title="1.3 顺序结构程序设计"></a>1.3 顺序结构程序设计</h2><p>交换两个变量的三变量法适用范围广，推荐使用。</p>
-<h2 id="1-4-分支结构程序设计"><a href="#1-4-分支结构程序设计" class="headerlink" title="1.4 分支结构程序设计"></a>1.4 分支结构程序设计</h2><p>C语言中的逻辑运算符都是短路运算符。</p>
-<p>“//”单行注释，“/**/”多行注释。</p>
-<h2 id="1-5-注解与习题"><a href="#1-5-注解与习题" class="headerlink" title="1.5 注解与习题"></a>1.5 注解与习题</h2><h3 id="1-5-1-C语言、C99、C11及其他"><a href="#1-5-1-C语言、C99、C11及其他" class="headerlink" title="1.5.1 C语言、C99、C11及其他"></a>1.5.1 C语言、C99、C11及其他</h3><p>建议把C语言程序当作C++程序提交。</p>
-<h3 id="1-5-2-数据类型和输入格式"><a href="#1-5-2-数据类型和输入格式" class="headerlink" title="1.5.2 数据类型和输入格式"></a>1.5.2 数据类型和输入格式</h3><p>编译器会把斜线“\\”理解成“\”。</p>
-<h3 id="1-5-3-习题"><a href="#1-5-3-习题" class="headerlink" title="1.5.3 习题"></a>1.5.3 习题</h3><h3 id="1-5-4-小结"><a href="#1-5-4-小结" class="headerlink" title="1.5.4 小结"></a>1.5.4 小结</h3><p>重视实验、学会模仿。</p>
-
     
 
     
